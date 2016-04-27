@@ -2,183 +2,171 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-    <link rel="stylesheet" href="/css/style.css"></link>
+    <title>Нёрдс-каталог.</title>
+    <link rel="stylesheet" href="css/style.css"></link>
   </head>
-  <body class="home">
-   <header class="main-header">
-    <nav>
+  <body>
+    <header class="main-header">
       <div class="container">
-        <div class="nav-wraper">
-          <a href="#" class="brand-logo left">
-            <img src="img/logo nav.png" width="150" height="100" alt="Нердс">
-          </a>
-          <ul class="nav-main">
-            <li>
-              <a href="#">Студия</a>
-            </li>
-            <li>
-              <a href="#">Клиенты</a>
-            </li>
-            <li>
-              <a href="#">Магазин</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
+        <figure class="main-header-logo">
+          <a href="#"><img src="img/logo.png" width="139" height="56" alt="Nerds"></a>
+        </figure>
+        <nav class="main-header-navigation">
+          <ul class="nav-list">
+            <li><a href="#">Студия</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a class="active" href="#">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a class="basket-btn" href="#">Корзина</a></li>
           </ul>
-          <div class="shop btn">
-            <a href="#"><img src="img/shop.png" width="30" height="30" alt="Корзина"/>
-              <span>Корзина</span></a>
-          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main-content">
+      <div class="container">
+        <div class="main-content-title">
+          <h1 class="main-content-title title">Добро пожаловать в магазин готовых макетов</h1>
         </div>
-      </div>
-    </nav>
-  </header>
-  <div class="main-container">
-  <main class="content">
-    <div class="main title">
-      <div class="container">
-        <h1>Добро пожаловать в магазин готовых макетов</h1>
-      </div>
-    </div>
-    <section class="left-content">
-      <div class="container">
-        <div class="left-content filter">
-          <div class="contaner">
-          <div class="range-filter">
+        <section class="catalog-left">
+          <form class="catalog-filter" action="#" method="post">
+            <h3 class="catalog-filter-title price">Стоимость:</h3>
             <div class="range-controls">
-                <div class="scale">
-                  <div class="bar">
-                </div>
-              </div>
-                <div class="toggle min-toggle">
-                </div>
-                <div class="toggle max-toggle">
-                </div>
+              <div class="scale"><div class="bar"></div></div>
+              <div class="toggle min-toggle"></div>
+              <div class="toggle max-toggle"></div>
+            </div>
+            <div class="price-controls">
+              от <input class="min-price" type="text" value="0">
+              до <input class="max-price" type="text" value="15 000">
+            </div>
+            <h3 class="catalog-filter-title grid">Сетка:</h3>
+            <input id="adaptive" name="grid" type="radio" value="adaptive" checked>
+            <label for="adaptive">Адаптивная</label>
+            <input id="rubber" name="grid" type="radio" value="rubber">
+            <label for="rubber">Резинования</label>
+            <input id="fixed" name="grid" type="radio" value="fixed">
+            <label for="fixed">Фиксированная</label>
+            <h3 class="catalog-filter-title features">Особенности:</h3>
+            <input id="slider" name="slider" type="checkbox" value="slider" checked>
+            <label for="slider">Слайдер</label>
+            <input id="advantage-block" name="advantage-block" type="checkbox" value="advantage-block">
+            <label for="advantage-block">Блок преимуществ</label>
+            <input id="news" name="news" type="checkbox" value="news" checked>
+            <label for="news">Новости</label>
+            <input id="gallery" name="gallery" type="checkbox" value="gallery">
+            <label for="gallery">Галлерея</label>
+            <input id="basket" name="basket" type="checkbox" value="basket">
+            <label for="basket">Корзина</label>
+            <button class="catalog-filter-btn" type="submit">Показать</button>
+          </form>
+        </section>
+        <section class="catalog-right">
+          <div class="catalog-search">
+            <h3 class="catalog-search-title">Сортировать:</h3>
+            <ul class="catalog-search-list">
+              <li><a class="catalog-search-point" href="#">По цене</a></li>
+              <li><a class="catalog-search-point" href="#">По типу</a></li>
+              <li><a class="catalog-search-point" href="#">По функционалу</a></li>
+            </ul>
+            <div class="catalog-search-btn">
+              <a class="search-btn-down" href="#"></a>
+              <a class="search-btn-up" href="#"></a>
             </div>
           </div>
-            <div class="price-controls">
-              <div class="contaner">
-                от <input class="min-price" type="text" value="0">
-                до <input class="max-price" type="text" value="15 000">
+          <div class="catalog-items-block">
+            <a class="catalog-item" href="#">
+              <figure class="catalog-item-image">
+                <img src="img/item-1.jpg" width="240" height="240" alt="Aviator">
+              </figure>
+              <div class="catalog-item-hover">
+                <h2 class="item-hover title">Sunset</h2>
+                <p class="item-hover info">Интернет-магазин с личным кабинетом</p>
+                <a class="item-hover btn">10000 р.</a>
               </div>
+            </a>
+            <a class="catalog-item" href="#">
+              <figure class="catalog-item-image">
+                <img src="img/item-2.jpg" width="240" height="240" alt="Beach">
+              </figure>
+              <div class="catalog-item-hover">
+                <h2 class="item-hover title">Sunset</h2>
+                <p class="item-hover info">Интернет-магазин с личным кабинетом</p>
+                <a class="item-hover btn">10000 р.</a>
+              </div>
+            </a>
+            <a class="catalog-item" href="#">
+              <figure class="catalog-item-image">
+                <img src="img/item-3.jpg" width="240" height="240" alt="Forte">
+              </figure>
+              <div class="catalog-item-hover">
+                <h2 class="item-hover title">Sunset</h2>
+                <p class="item-hover info">Интернет-магазин с личным кабинетом</p>
+                <a class="item-hover btn">10000 р.</a>
+              </div>
+            </a>
+            <a class="catalog-item" href="#">
+              <figure class="catalog-item-image">
+                <img src="img/item-4.jpg" width="240" height="240" alt="Marquee">
+              </figure>
+              <div class="catalog-item-hover">
+                <h2 class="item-hover title">Sunset</h2>
+                <p class="item-hover info">Интернет-магазин с личным кабинетом</p>
+                <a class="item-hover btn">10000 р.</a>
+              </div>
+            </a>
+            <a class="catalog-item" href="#" >
+              <figure class="catalog-item-image">
+                <img src="img/item-5.jpg" width="240" height="240" alt="Avenue">
+              </figure>
+              <div class="catalog-item-hover">
+                <h2 class="item-hover title">Sunset</h2>
+                <p class="item-hover info">Интернет-магазин с личным кабинетом</p>
+                <a class="item-hover btn">10000 р.</a>
+              </div>
+            </a>
+            <a class="catalog-item" href="#">
+              <figure class="catalog-item-image">
+                <img src="img/item-6.jpg" width="240" height="240" alt="Dovetail">
+              </figure>
+              <div class="catalog-item-hover">
+                <h2 class="item-hover title">Sunset</h2>
+                <p class="item-hover info">Интернет-магазин с личным кабинетом</p>
+                <a class="item-hover btn">10000 р.</a>
+              </div>
+            </a>
+            <div class="catalog-pagination">
+              <a class="catalog-pagination-active" href="#">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a class="catalog-pagination-next" href="#">Следующая</a>
             </div>
+          </div>  
+        </section>  
+    <footer class="main-footer">
+      <div class="container">
+        <div class="main-footer map">
+          <div class="map" id="map-canvas">
+            <img src="img/map.png" height="420px" alt="Map">
           </div>
         </div>
-       </div>
-       <div class="filter-container">
-         <p>Сетка</p>
-         <form class="layout-style" action="#" method="get">
-           <input type="radio" name="radio-1" id="adaptive" checked>
-            <label for="adaptive">Адаптивная</label><br>
-           <input type="radio" name="radio-2" id="fixed" >
-            <label for="fixed">Фиксированная</label><br>
-           <input type="radio" name="radio-3" id="rubber">
-            <label for="rubber">Резиновая</label><br>
-         <p>Группы товаров</p>
-           <input type="checkbox" name="checkbox-1" id="slider" checked>
-            <label for="slider">Слайдер</label><br>
-           <input type="checkbox" name="checkbox-2" id="block">
-            <label for="block">Блок преимуществ</label><br>
-           <input type="checkbox" name="checkbox-3" id="news" checked>
-            <label for="news">Новости</label><br>
-           <input type="checkbox" name="checkbox-4" id="gallery">
-            <label for="gallery">Галерея</label><br>
-           <input type="checkbox" name="checkbox-5" id="shop">
-            <label for="shop">Корзина</label>
-           <input type="submit" value="Показать">
-         </form>
-       </div>
-     </section>
-       <section class="right-conten">
-         <div class="gallery sorting-menu">
-           <ul class="sorting-menu">
-             <li>Сортировать:
-             </li>
-             <li>
-               <a href="#">По цене</a>
-             </li>
-             <li>
-               <a href="#">По типу</a>
-             </li>
-             <li>
-               <a href="#">По функционалу</a>
-             </li>
-             <li>
-               <a class="down" href="#"></a>
-             </li>
-             <li>
-               <a class="up" href="#"></a>
-             </li>
-           </ul>
-         </div>
-         <div class="gallery contaner">
-           <div class="gallery cell">
-             <a href="#"><img src="img/item-1.png" width="80" height="80" alt="Aviator"/>
-           </div>
-           <div class="gallery cell">
-             <a href="#"><img src="img/item 2back.jpg" width="80" height="80" alt="Sunset"/>
-           </div>
-           <div class="gallery cell">
-             <a href="#"><img src="img/item-3.png" width="80" height="80" alt="Forte"/>
-           </div>
-           <div class="gallery cell">
-             <a href="#"><img src="img/item-4.png" width="80" height="80" alt="Marquee"/>
-           </div>
-           <div class="gallery cell">
-             <a href="#"><img src="img/item-5.png" width="80" height="80" alt="Avenue"/>
-           </div>
-           <div class="gallery cell">
-             <a href="#"><img src="img/item-6.png" width="80" height="80" alt="Dovetail"/>
-           </div>
-           <ul class="pagination">
-            <li>
-              <a href="#" class="active">1</a>
-            </li>
-            <li>
-              <a href="#">2</a>
-            </li>
-            <li>
-              <a href="#">3</a>
-            </li>
-            <li>
-              <a href="#" class="next">Следующая</a>
-            </li>
-          </ul>
-         </div>
-      </div>
-  </main>
-    <footer class="main-footer">
-        <div class="container">
-          <div class="main-footer map">
-            <div class="contaner">
-              <img src="img/map.png" width="600" height="180" alt="Как нас найти"/>
-              <div class="map point">
-                <div class="contaner">
-                  <img src="img/map point.png" width="60" height="60" alt="Nёrds"/>
-                </div>
-              </div>
-            </div>
+        <div class="main-footer map-content">
+          <h2 class="map-content-title">NЁRDS DESIGN STUDIO</h2>
+          <p>191186 Санкт-Петербург, ул Б. Конюшенная, д. 19/8</p>
+          <a href="tel:+7(812)275-75-75">тел. +7(812)275-75-75</a>
+          <div class="write-btn">
+            <a href="#">Напишите нам</a>
           </div>
-           <div class="footer-contacts">
-             <strong>Nёrds design studio</strong>
-             <address class="address">
-               191186 Санкт-Петербург, ул Б. Конюшенная, д. 19/8
-               тел. +7(812)275-75-75
-             </address>
-             <div class="write button">
-                <a href="#">Напишите нам</a>
-             </div>
-           </div>
-           <div class="footer-social">
-             <p><span>Давайте дружить, это выгодно</span>
-             Скидка 10% для друзей из социальных сетей</p>
-             <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-             <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-             <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-            </div>
-         </div>
+        </div>
+        <div class="social-bar">
+          <a class="vk-btn" href="#"></a>
+          <a class="fk-btn" href="#"></a>
+          <a class="insta-btn" href="#"></a>
+        </div>
+        <div class="footer-content">
+          <h2 class="footer-content-title">Давайте дружить, это выгодно!</h2>
+          <p class="footer-content-info">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

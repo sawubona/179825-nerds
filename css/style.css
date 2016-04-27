@@ -1,24 +1,22 @@
-body{
+body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;
   color: black;
 }
-h1{
+h1 {
   font-family: "Roboto", sans-serif;
   font-size: 36px;
   line-height: 15px;/*уточнить!*/
   font-weight: bold;
   color: black;
 }
-h2{
+h2 {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 30px;/*уточнить!*/
   font-weight: normal;
   color: black;
 }
-h3{
-  font-family: 
-}
+
