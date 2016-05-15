@@ -5,7 +5,7 @@
     <title>Нёрдс</title>
     <link href="http://fonts.googleapis.com/css?family=Roboto:500&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css"></link>
     <link rel="stylesheet" href="css/normalize.css"></link>
-    <link rel="stylesheet" href="css/style.css"></link>
+    <link rel="stylesheet" href="css/style.min.css"></link>
   </head>
   <body>
     <header class="main-header">
@@ -17,7 +17,7 @@
           <ul class="nav-list">
             <li><a class="active" href="#">Студия</a></li>
             <li><a href="#">Клиенты</a></li>
-            <li><a href="#">Магазин</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
             <li><a href="#">Контакты</a></li>
             <li><a class="basket-btn" href="#">Корзина</a></li>
           </ul>
@@ -41,7 +41,7 @@
                 <div class="slide-content">
                   <h2 class="slide-title">Долго, дорого,
                   скрупулезно.</h2>
-                  <p class="slide-info">Математически выверенный дизайн
+                  <p class="slide-info math">Математически выверенный дизайн
                   для вашего сайта или мобильного приложения.</p>
                   <a class="slide-btn" href="#">Узнать больше</a>
                 </div>
@@ -81,7 +81,7 @@
         </div>
         <section class="services-container">
           <div class="service">
-            <figure class="service-image">
+            <figure class="service-image web">
               <img src="img/service-sites.jpg" width="240" height="124" alt="Веб-сайты">
             </figure>
             <h3 class="service-title">Веб-сайты</h3>
@@ -89,15 +89,15 @@
             <a class="service-btn-web" href="#">Заказать</a>
           </div>
           <div class="service">
-            <figure class="service-image">
+            <figure class="service-image apps">
               <img src="img/service-apps.jpg" width="240" height="124" alt="Приложения">
             </figure>
             <h3 class="service-title">Приложения</h3>
-            <p class="service-info">Покорите топ-10 приложений в AppStrore и Google Play.</p>
+            <p class="service-info app">Покорите топ-10 приложений в AppStrore и Google Play.</p>
             <a class="service-btn-apps" href="#">Заказать</a>
           </div>
           <div class="service">
-            <figure class="service-image">
+            <figure class="service-image pres">
               <img src="img/service-pres.jpg" width="240" height="124" alt="Презентации">
             </figure>
             <h3 class="service-title">Презентации</h3>
@@ -145,18 +145,15 @@
     </main>      
     <footer class="main-footer">
       <div class="map">
-        <div class="map-canvas" id="map-canvas"></div>
+        <div class="map-wrapper" id="map-canvas"></div>
         <div class="map-content">
           <div class="content-box">
             <h2 class="map-content-title">NЁRDS DESIGN STUDIO</h2>
-            <p>191186 Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-            <a href="tel:+7(812)275-75-75">тел. +7(812)275-75-75</a>
+            <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <a href="tel:+7(812)275-75-75">тел. +7 (812) 275-75-75</a>
             <div class="write-btn">
               <a href="#">Напишите нам</a>
             </div>
-          </div>
-          <div class="content-point">
-            <img class="point" src="img/map-point.png">
           </div>
         </div>
       </div>
@@ -192,6 +189,7 @@
         <a href="#" class="writeus-closed-btn"></a>
       </form>
     </div>
-    <script src="js/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhwsuc8W9OK0qoyzZAUIX_nUyAgEc9DP4"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

@@ -5,7 +5,7 @@
     <title>Нёрдс-каталог.</title>
     <link href="http://fonts.googleapis.com/css?family=Roboto:500&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css"></link>
     <link rel="stylesheet" href="css/normalize.css"></link>
-    <link rel="stylesheet" href="css/style.css"></link>
+    <link rel="stylesheet" href="css/style.min.css"></link>
   </head>
   <body>
     <header class="main-header">
@@ -15,7 +15,7 @@
         </div>
         <nav class="main-header-navigation">
           <ul class="nav-list">
-            <li><a href="#">Студия</a></li>
+            <li><a href="index.html">Студия</a></li>
             <li><a href="#">Клиенты</a></li>
             <li><a class="active" href="#">Магазин</a></li>
             <li><a href="#">Контакты</a></li>
@@ -26,7 +26,7 @@
     </header> 
     <main class="main-content">
       <div class="main-content-title">
-        <h1 class="main-title">Добро пожаловать в магазин<br>готовых макетов</h1>
+        <h1 class="main-title">Добро пожаловать в магазин готовых макетов</h1>
       </div>
       <div class="catalog-container clearfix">
         <section class="catalog-left">
@@ -57,9 +57,9 @@
             <label for="slider">Слайдер</label>
             <input id="advantage-block" name="advantage-block" type="checkbox" value="advantage-block">
             <label for="advantage-block">Блок преимуществ</label>
-            <input id="news" name="news" type="checkbox" value="news">
+            <input id="news" name="news" type="checkbox" value="news"checked>
             <label for="news">Новости</label>
-            <input id="gallery" name="gallery" type="checkbox" value="gallery" checked>
+            <input id="gallery" name="gallery" type="checkbox" value="gallery">
             <label for="gallery">Галерея</label>
             <input id="basket" name="basket" type="checkbox" value="basket">
             <label for="basket">Корзина</label>
@@ -150,19 +150,16 @@
     </main>  
     <footer class="main-footer">
       <div class="map">
-        <div class="map-canvas" id="map-canvas">
+        <div class="map-wrapper" id="map-canvas">
         </div>
         <div class="map-content">
           <div class="content-box">
             <h2 class="map-content-title">NЁRDS DESIGN STUDIO</h2>
-            <p>191186 Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-            <a href="tel:+7(812)275-75-75">тел. +7(812)275-75-75</a>
+            <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <a href="tel:+7(812)275-75-75">тел. +7 (812) 275-75-75</a>
             <div class="write-btn">
               <a href="#">Напишите нам</a>
             </div>
-          </div>
-          <div class="content-point">
-            <img class="point" src="img/map-point.png">
           </div>
         </div>
       </div>
@@ -198,6 +195,7 @@
       <a href="#" class="writeus-closed-btn"></a>
     </form>
   </div>
-  <script src="js/script.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhwsuc8W9OK0qoyzZAUIX_nUyAgEc9DP4"></script>
+  <script src="js/script.min.js"></script>
   </body>
 </html>
