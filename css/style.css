@@ -39,7 +39,6 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-
 }
 
 h1 {
@@ -247,7 +246,7 @@ div.partners {
 .content-box {
   position: absolute;
   top: 88px;
-  left: 17%;
+  left: 50%;
   width: 210px;
   min-height: 210px;
   padding-top: 10px;
@@ -256,6 +255,7 @@ div.partners {
   padding-left: 20px;
   font-weight: 500;
   background: white;
+  transform: translateX(-440px);
 }
 
 .content-box p {
@@ -537,6 +537,7 @@ a.service-btn-pres:active {
   border-radius: 4px;
   outline: none;
 }
+
 .writeus textarea { padding-bottom: 15px; }
 
 .writeus input:hover,
