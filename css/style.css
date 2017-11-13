@@ -30,7 +30,7 @@
 .icon-circle-dot::before { content: "\25cf"; } /* "●" */
 .icon-check-off::before { content: "\2610"; } /* "☐" */
 .icon-check-on::before { content: "\2611"; } /* "☑" */
-.icon-instagramm::before { content: "📷"; } /* "\1f4f7" */
+ .icon-instagramm::before { content: "📷"; } /* "\1f4f7" */
 
 body {
   min-width: 900px;
