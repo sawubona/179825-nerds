@@ -8,6 +8,7 @@ var storage = localStorage.getItem("login");
 open.addEventListener("click", function (event) {
     event.preventDefault(event);
     popup.classList.add("writeus-show");
+    console.log('Hello from 2018');
     login.focus();
     if (storage) {
         login.value = storage;
